@@ -1,0 +1,38 @@
+NAMA : RIKA RAMANDA
+NIM  : 13020210008
+
+1. Terapkan akses modifier pada atribut dan lakukan proses enkapsulasi pada suatu kelas dan juga Implementasikan method setter dan getter pada attribute kelas yang sudah diberikan akses modifier private
+Jawab:
+
+package b1modul4b1rikaramanda;
+public class B1modul4b1RikaRamanda {
+       public static void main(String[] args) {
+    
+        Person person = new Person("Manda", 20);
+        System.out.println("Name: " + person.getName() + ", Age: " + person.getAge());
+    }
+}
+class Person {
+    private String name;
+    private int age;
+        
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }      
+    public String getName() {
+        return name;
+    }        
+    public void setName(String name) {
+        this.name = name;
+    }       
+    public int getAge() {
+        return age;
+    }       
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+
+
+
